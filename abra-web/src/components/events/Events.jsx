@@ -6,8 +6,11 @@ import escape_room from '../../assets/images/events/escape_room.png'
 import physics_carnival from '../../assets/images/events/physics_carnival.jpg'
 import guest_lecture_ranjan_chopra from '../../assets/images/events/guest_lecture_ranjan_chopra.jpg'
 import threed_printing from '../../assets/images/events/threed_printing.jpg'
-
+import threed from '../../assets/images/events/threed.jpg'
+import guest from '../../assets/images/events/guest.jpg'
 import { motion } from 'framer-motion'
+import carnival from '../../assets/images/events/carnival.jpg'
+import escape from '../../assets/images/events/escape.jpg'
 
 
 const Events = () => {
@@ -42,8 +45,8 @@ const Events = () => {
                 <Navbar />
             </div>
             <div className="workShop">
-                <button className='eventPageTitle' onClick={workshopHandle}>Work Shop</button>
-                <button className='evtBtn' onClick={eventHandle}>Events</button>
+                <button className='eventPageTitle text-xl' onClick={workshopHandle}>Work Shop</button>
+                <button className='evtBtn text-xl' onClick={eventHandle}>Events</button>
             </div>
 
             <div className='eventsCard flex h-lvh mt-20'>
@@ -51,7 +54,7 @@ const Events = () => {
 
 
                     <div>
-                        <div className='flip-card  w-[500px] h-[500px] rounded-md  cursor-pointer' onClick={handleFlip}>
+                        <div className='flip-card  w-[500px] h-[550px] rounded-md  cursor-pointer' onClick={handleFlip}>
                             <motion.div
                                 className='flip-card-inner w-[100%] h-[100%]'
                                 initial={false}
@@ -61,12 +64,12 @@ const Events = () => {
                             >
                                 <div
                                     className='flip-card-front w-[100%] h-[100%] bg-contain bg-no-repeat text-white rounded p-4'
-                                    style={{ backgroundImage: `url(${escape_room})` }}>
+                                    style={{ backgroundImage: `url(${physics_carnival})` }}>
                                 </div>
 
                                 <div
                                     className='flip-card-back w-[100%] h-[100%]  bg-contain bg-no-repeat text-white rounded p-4'
-                                    style={{ backgroundImage: `url(${physics_carnival})` }}>
+                                    style={{ backgroundImage: `url(${carnival})` }}>
                                 </div>
 
                             </motion.div>
@@ -74,7 +77,7 @@ const Events = () => {
                     </div>
 
                     <div>
-                        <div className='flip-card  w-[500px] h-[500px] rounded-md    cursor-pointer' onClick={handleFlip}>
+                        <div className='flip-card  w-[500px] h-[550px] rounded-md    cursor-pointer' onClick={handleFlip}>
                             <motion.div
                                 className='flip-card-inner w-[100%] h-[100%]'
                                 initial={false}
@@ -89,7 +92,7 @@ const Events = () => {
 
                                 <div
                                     className='flip-card-back w-[100%] h-[100%]  bg-contain bg-no-repeat text-white rounded p-4'
-                                    style={{ backgroundImage: `url(${physics_carnival})` }}>
+                                    style={{ backgroundImage: `url(${escape})` }}>
                                 </div>
 
                             </motion.div>
@@ -102,7 +105,7 @@ const Events = () => {
 
                     :
                     <><div>
-                        <div className='flip-card  w-[500px] h-[500px] rounded-md    cursor-pointer' onClick={handleFlip}>
+                        <div className='flip-card  w-[500px] h-[550px] rounded-md    cursor-pointer' onClick={handleFlip}>
                             <motion.div
                                 className='flip-card-inner w-[100%] h-[100%]'
                                 initial={false}
@@ -117,7 +120,7 @@ const Events = () => {
 
                                 <div
                                     className='flip-card-back w-[100%] h-[100%]  bg-contain bg-no-repeat text-white rounded p-4'
-                                    style={{ backgroundImage: `url(${guest_lecture_ranjan_chopra})` }}>
+                                    style={{ backgroundImage: `url(${threed})` }}>
                                 </div>
 
                             </motion.div>
@@ -125,7 +128,7 @@ const Events = () => {
                     </div>
 
                         <div>
-                            <div className='flip-card  w-[500px] h-[500px] rounded-md    cursor-pointer' onClick={handleFlip}>
+                            <div className='flip-card  w-[500px] h-[550px] rounded-md    cursor-pointer' onClick={handleFlip}>
                                 <motion.div
                                     className='flip-card-inner w-[100%] h-[100%]'
                                     initial={false}
@@ -135,12 +138,12 @@ const Events = () => {
                                 >
                                     <div
                                         className='flip-card-front w-[100%] h-[100%] bg-contain bg-no-repeat text-white rounded p-4'
-                                        style={{ backgroundImage: `url(${threed_printing})` }}>
+                                        style={{ backgroundImage: `url(${guest_lecture_ranjan_chopra})` }}>
                                     </div>
 
                                     <div
                                         className='flip-card-back w-[100%] h-[100%]  bg-contain bg-no-repeat text-white rounded p-4'
-                                        style={{ backgroundImage: `url(${guest_lecture_ranjan_chopra})` }}>
+                                        style={{ backgroundImage: `url(${guest})` }}>
                                     </div>
 
                                 </motion.div>
