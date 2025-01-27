@@ -13,6 +13,26 @@
     margin-right: 35px;
 }
 
+
+
+.flip-card{
+    perspective: 1000px;
+}
+
+.flip-card-inner{
+    perspective: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.flip-card-back{
+    transform: rotateY(180deg);
+}
+
 .tempNav {
     margin-left: 10vw;
 }
@@ -30,12 +50,7 @@ h1.animate {
     color: white;
 }
 
-p {
-    font-size: max(10pt, 2.5vmin);
-    /* line-height: 1.4; */
-    color: #0e390e;
-    margin-bottom: 1.5rem;
-}
+
 
 .wrap {
     display: flex;
@@ -169,7 +184,9 @@ p {
 
 .eventsCard {
     display: flex;
-    margin-top: 0px;
+    margin-top: 7rem;
+    margin-left: 8rem;
+    justify-content: space-around;
 }
 
 .workShop {
@@ -179,12 +196,13 @@ p {
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 3rem;
+    
     /* align-items: center; */
 }
 
 .evtBtn {
     /* border: 1px solid #a39eeb; */
-    background: #000000;
+    background-color:black;
     color: #fff;
     padding: 7px;
     margin: 2px;
